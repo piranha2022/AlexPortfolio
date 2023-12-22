@@ -1,0 +1,358 @@
+*,
+h1,
+h2,
+h3 {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color-text: #fff;
+    ;
+    --font-size-titles: 50px
+}
+
+@font-face {
+    font-family: 'Montserrat-400';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'Montserrat-500';
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-600';
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-300';
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Optima Cyr';
+    src: url(../fonts/Optima/agoptimabold.ttf);
+}
+
+body {
+    font-family: 'Montserrat-500', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+/* Nav */
+
+.main_block_portfolio {
+    background: url(/img/1612890851_123-p-cherno-krasnii-fon-dlya-avi-161.jpeg) no-repeat center/cover;
+    padding: 20px 0;
+    height: 100vh;
+}
+
+.bg_personal {
+    height: 100%;
+    background: url(/img/IMG_20230824_231154_882.png) no-repeat left 140px bottom -30px;
+    background-size: 55%;
+    position: relative;
+}
+
+.main_text_block {
+    width: 50%;
+    padding-left: 20px;
+    background: #000;
+    opacity: 0.6;
+    position: absolute;
+    right: 50px;
+    top: 20%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto 0;
+    position: fixed;
+    width: 100%;
+    max-width: 2000px;
+    z-index: 15;
+}
+
+.logo {
+    width: 100px;
+    opacity: 0.6;
+}
+
+.logo_img {
+    width: 100%;
+    border-radius: 10px;
+    color: red;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #411304;
+    font-size: 30px;
+    margin-left: 30px;
+    padding: 5px 20px;
+    background: #ca1818;
+    border-radius: 8px;
+    box-shadow: 4px 5px 8px #bb4f4f;
+    cursor: pointer;
+}
+
+.nav_link:hover {
+    background: rgb(126, 9, 9);
+    /* надо сделать трансформацию кнопки */
+}
+
+/* Main */
+
+.main_block {
+    display: flex;
+    justify-content: space-between;
+    background: url(/img/IMG_20230824_231154_882.png) no-repeat left top;
+    background-size: 90%;
+    height: 90vh;
+    min-height: 800px;
+    position: relative;
+}
+
+.main_title {
+    font-family: 'Montserrat-500', serif;
+    font-size: 60px;
+    color: var(--color-text);
+}
+
+.main_text {
+    font-size: 45px;
+    margin-top: 40px;
+    color: var(--color-text);
+    line-height: 70px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* About */
+
+.about_block {
+    background: url(/img/Ovi.bg.jpeg) no-repeat center/cover;
+    height: 100vh;
+    padding-top: 150px;
+}
+
+.about {
+    padding: 50px 0;
+    position: relative;
+}
+
+.title_about {
+    margin-left: 20px;
+    color: var(--color-text);
+    font-size: 50px;
+    font-family: 'Montserrat-500', sans-serif;
+}
+
+.text_about {
+    padding: 10px;
+    background: #000;
+    opacity: 0.6;
+    margin-top: 20px;
+    color: var(--color-text);
+    font-size: 30px;
+    text-align: justify;
+}
+
+.img_about {
+    width: 220px;
+    position: absolute;
+    top: 130px;
+    right: 0px;
+    opacity: 0.3;
+    transition: 1s;
+}
+
+.img_about:hover {
+    width: 500px;
+    transition: 1s;
+    opacity: 1;
+    border-radius: 10px
+}
+
+/* Statistic */
+.statistic_block {
+    background: url(/img/bg-statistic.jpeg) no-repeat center/cover;
+    padding: 150px 0 30px;
+    min-height: 800px;
+    height: 100vh;
+}
+
+.main_title_statistic {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    color: var(--color-text);
+}
+
+.block_statistic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_statistic {
+    color: var(--color-text);
+    font-size: 30px;
+    opacity: none;
+    text-align: center;
+}
+
+.img_statistic {
+    width: 900px;
+    opacity: 0.5;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+.img_statistic:hover {
+    width: 1200px;
+    transition: 1s;
+    opacity: 1;
+    border-radius: 10px
+}
+
+.statistic {
+    margin-top: 30px;
+}
+
+/* fotogalary_bloc */
+
+.fotogalary_bloc {
+    background: url(/img/1612890796_34-p-cherno-krasnii-fon-dlya-avi-51.jpeg) no-repeat center/cover;
+    height: 100vh;
+    padding: 100px 20px 30px;
+}
+
+.foto {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 1300px;
+    background: #000;
+    opacity: 0.6;
+}
+
+.img_block {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    background: #000;
+    opacity: 0.7;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img_fotogalary {
+    width: 100%;
+}
+
+.fotogalary_title {
+    text-align: center;
+    font-family: 'Montserrat-500';
+    font-size: 50px;
+    color: var(--color-text);
+    background: #000;
+    opacity: 0.8;
+    padding: 10px;
+}
+
+
+/* Media */
+
+@media (max-width: 1439px) {
+    .nav {
+        max-width: 1000px;
+    }
+
+    .bg_personal {
+        background-position: left 75px bottom -30px;
+    }
+
+    .main_title {
+        font-size: 50px;
+    }
+
+    .main_text_block {
+        right: 45px;
+    }
+
+    .main_text {
+        line-height: 40px;
+        font-size: 30px;
+    }
+
+    .nav_link {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .img_statistic {
+        flex-wrap: wrap;
+        opacity: 0.5;
+        margin-top: 10px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about_block {
+        margin: auto;
+        padding-top: 80px;
+    }
+
+    .title_about {
+        font-size: 30px;
+    }
+
+    .text_about {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .statistic_block {
+        padding: 100px 0 30px;
+    }
+
+    .block_statistic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistic {
+        margin-top: 20px;
+    }
+
+    .main_title_statistic {
+        font-size: 30px;
+    }
+
+    .title_statistic {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 1020px) {}
